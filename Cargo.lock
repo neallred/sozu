@@ -612,7 +612,7 @@ checksum = "db65c6da02e61f55dae90a0ae427b2a5f6b3e8db09f58d10efab23af92592616"
 dependencies = [
  "arrayvec",
  "bitflags",
- "cfg-if",
+ "cfg-if 0.1.10",
  "ryu",
  "static_assertions",
 ]
@@ -1265,8 +1265,9 @@ dependencies = [
 name = "sozu"
 version = "0.11.51"
 dependencies = [
- "clap",
+ "chrono",
  "futures",
+ "hex",
  "jemallocator",
  "lazy_static",
  "libc",
@@ -1275,6 +1276,7 @@ dependencies = [
  "nix",
  "nom 4.2.3",
  "num_cpus",
+ "prettytable-rs",
  "rand",
  "regex",
  "serde",
@@ -1283,6 +1285,8 @@ dependencies = [
  "slab 0.3.0",
  "sozu-command-lib",
  "sozu-lib",
+ "structopt",
+ "structopt-derive 0.3.5",
  "tempfile",
  "time 0.1.44",
 ]
@@ -1358,21 +1362,6 @@ dependencies = [
  "url 2.2.0",
  "uuid",
  "webpki",
-]
-
-[[package]]
-name = "sozuctl"
-version = "0.11.51"
-dependencies = [
- "hex",
- "prettytable-rs",
- "rand",
- "serde",
- "serde_derive",
- "serde_json",
- "sozu-command-lib",
- "structopt",
- "structopt-derive 0.3.5",
 ]
 
 [[package]]
